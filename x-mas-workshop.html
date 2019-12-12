@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Internal DSL with Kotlin</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+        class: center, middle
+
+        # X-MAS -> Writing DSLs in Kotlin
+
+        ---
+
+        # Agenda
+
+        ### Domain Specific Language
+        ### Characteristics of Internal/External DSLs
+        ### Use Cases for DSLs
+        ### Characteristics of Kotlin
+        ### Hands On
+
+        ---
+
+        # Domain Specific Language
+
+        Wikipedia
+        - A domain-specific language (DSL) is a computer language specialized to a particular application domain. This is in contrast to a general-purpose language (GPL), which is broadly applicable across domains.
+
+        Characteristics of DSLs are
+        - Context
+        - Fluency
+
+        Using a language that was designed with a specific problem in mind
+
+
+
+        There is a difference in Internal and External DSLs
+
+        ---
+
+        # Characteristics of...
+
+        External DSL
+        - Own language and syntax
+        - Flexibillity
+        - Parser needed to interpreate or translate
+        - A lot of effort to maintain language and parser
+        
+        Internal DSL
+        - Based on existing Language e. g. Kotlin or Java
+        - No parser needed, just use Language Compiler and Runtime
+        - Use your favorite IDEA
+        - Easy to maintain "by everyone"
+        - Syntax constraints
+        - Depends on flexibility and fluency of the language
+        
+        ---
+
+        # Use Cases for DSLs
+        Make File (External)
+
+        CSS (External)
+
+        Cucumber (External)
+
+        Selenium || FluentLenium (Internal)
+
+        SQL (External)
+
+        - SELECT Person.name, Person.age FROM Person ORDER BY Person.age DESC
+
+        ---
+
+        # Characteristics of Kotlin
+        Pragmatic
+        - Proven solutions for common task
+
+        Safe
+        - Preventing common errors such as NullPointerExceptions
+        - Immutability
+
+        Concise
+        - Supporting compact and easy-to-read code
+
+        Interoperable
+        - Providing unrestricted integration with Java
+
+        ---
+
+        # Hands On
+        Kotlin supports several ways to create a cleaner syntax and avoid "noise" in the code
+
+        We will focus on
+        - Concise Syntax
+        - Use of lambdas
+        - Lambdas with receivers
+        - Extension functions
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
